@@ -1159,6 +1159,12 @@ body {
     }
 
 
+    /* section1 ==> fashion section */
+    .fashion-section-parent {
+        justify-content: center;
+    }
+
+
     /* sec2 brand section */
     .brand-section-parent {
         width: 100%;
