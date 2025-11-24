@@ -427,9 +427,7 @@ body {
 
 .brand-section-parent {
     width: 85%;
-    height: 100vh;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 .brand-bar {
@@ -678,9 +676,8 @@ body {
 
 .recommended-section-parent {
     width: 88%;
-    height: 100vh;
     margin: auto;
-    
+    margin-bottom: 50px;
 }
 
 .recommended-section-parent > h2 {
@@ -815,12 +812,10 @@ body {
 
 .news-section-parent {
     width: 100%;
-    height: 135vh;
     background-color: azure;
     border-top: 1px solid rgb(177, 177, 177);
     border-bottom: 1px solid rgb(177, 177, 177);
     box-shadow: 0  0  1px  0  rgb(0, 0, 0) inset;
-    /* margin-bottom: 50px; */
 }
 
 .news-section-parent > h2 {
@@ -831,24 +826,19 @@ body {
 
 .news-section-parent .news-div {
     width: 85%;
-    height: 87%;
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
 .news-section-parent .news-div .one-news {
     width: 30%;
-    height: 100%;
-    
 }
 
 .news-section-parent .news-div .one-news img {
     width: 100%;
-    height: 60%;
+    height: 450px;
     transition: 0.2s;
 }
 
@@ -879,11 +869,14 @@ body {
 .news-section-parent .news-div .one-news .news-details a {
     color: black;
     font-size: 22px;
+}
+
+.news-section-parent .news-div .one-news .news-details .news-link {
     transition: 0.5s;
 }
 
-.news-section-parent .news-div .one-news .news-details a:hover {
-    transform: scale(1.1,1.1);
+.news-section-parent .news-div .one-news .news-details .news-link:hover {
+    transform: scale(1.03,1.05);
 }
 
 .news-section-parent .news-div .one-news:hover .news-details h3 {
@@ -948,8 +941,8 @@ body {
 
 .subscribe-section-parent {
     width: 100%;
-    height: 90vh;
     background-color: rgba(0, 0, 0, 0.918);
+    padding-bottom: 30px;
 }
 
 .subscribe-section-parent .subscribe {
@@ -987,8 +980,8 @@ body {
 
 .subscribe-section-parent .subscribe .subscribe-email button {
     cursor: pointer;
-    min-width: 150px;
-    min-height: 50px;
+    width: 150px;
+    height: 50px;
     font-size: 20px;
     background-color: red;
     color: #fff;
@@ -1002,7 +995,6 @@ body {
 .subscribe-section-parent .subscribe .subscribe-link a {
     color: rgb(101, 96, 136);
     font-size: 25px;
-    justify-self: center;
     transition: 0.3s;
 }
 .subscribe-section-parent .subscribe .subscribe-link a:hover i {
@@ -1014,14 +1006,24 @@ body {
     width: 85%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     margin-top: 70px;
     margin-bottom: 20px;
     padding-bottom: 80px;
     border-bottom: 1px solid gray;
 }
 
-.subscribe-section-parent .more-shope a{
+.subscribe-section-parent .more-shope .logo {
+    margin-right: 50px;
+    width: 18%;
+}
+
+.subscribe-section-parent .more-shope .shope-link {
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-section-parent .more-shope .shope-link a{
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
@@ -1029,12 +1031,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.5s;
 }
-.subscribe-section-parent .more-shope a:hover {
+.subscribe-section-parent .more-shope .shope-link a:hover {
     transform: scaleX(1.1);
     text-decoration: underline;
 }
 
-.subscribe-section-parent .more-shope h3 {
+.subscribe-section-parent .more-shope .shope-link h3 {
     font-size: 21px;
     color: #fff;
     margin-bottom: 30px;
@@ -1078,5 +1080,327 @@ body {
     }
     100% {
 
+    }
+}
+
+
+
+@media (max-width: 567px) {
+
+    /* header sec1 */
+    .header .header-sec1 {
+        width: 100%;
+        height: 45px;
+        justify-content: center;
+    }
+    .header .header-sec1 .sec1-line {
+        top: 45px;
+    }
+
+
+    /* header sec2 */
+    .header .header-sec2 {
+        width: 100%;
+        height: 140px;
+    }
+    .header-sec2 .sec2-title {
+        margin: auto;
+    }
+    .header-sec2 .sec2-link-icon {
+        margin: auto;
+    }
+    .header-sec2 .sec2-link .check-list .pages-details {
+        width: 230px;
+        height: 150px;
+    }
+    .header-sec2 .sec2-link .pages-details p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .header-sec2 .sec2-link .pages-details a {
+        font-size: 15px;
+    }
+
+
+    /* sec3 */
+    .header-sec3 .sec3-details {
+        font-size: 13px;
+    }
+    .header-sec3 .sec3-link {
+        font-size: 15px;
+    }
+
+
+    /* main section */
+    .main-parent {
+        margin-top: 70px;
+        background-position: center;
+    }
+    .main-parent .main-details {
+        width: 350px;
+        top: 12%;
+        left: 2%;
+    }
+    
+    .main-parent .main-details h3 {
+        font-size: 40px;
+    }
+    .main-parent .main-details h2 {
+        font-size: 40px;
+    }
+    .main-parent .main-details p {
+        font-size: 17px;
+        color: rgb(87, 87, 87);
+    }
+    .main-parent .main-details button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+
+    /* sec2 brand section */
+    .brand-section-parent {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .brand-bar {
+        margin-bottom: 0px;
+    }
+    
+    .brand-bar h2 {
+        font-size: 25px;
+        font-weight: 600;
+        width: 200px;
+        text-align: center;
+    }
+    
+    .brand-bar .brand-bar-link a {
+        color: rgb(75, 75, 75);
+        font-size: 20px;
+        margin: 0 5px;
+    }
+    
+    .brand-bar .brand-bar-link a::after {
+        transform: translateY(36px);
+    }
+    
+    .brands {
+        width: 85%;
+        margin: auto;
+        flex-flow: column wrap;
+        margin-top: 50px;
+    }
+    
+    .brands .one-brand {
+        margin: auto;
+    }
+    
+    .brands .left {
+        visibility: hidden;
+    }
+    .brands .right {
+        visibility: hidden;
+    }
+
+
+    /* sec3 ==> customer section */
+    .customer-section-parent {
+        padding: 90px 0px;
+    }
+
+    .customer-section-parent .customer-title {
+        width: 75%;
+    }
+
+    .customer-section-parent .customer-title h2 {
+        font-size: 25px;
+    }
+    .customer-section-parent .customer-title p {
+        font-size: 18px;
+    }
+    .customer-section-parent .left {
+        left: 5%;
+    }
+    .customer-section-parent .right {
+        right: 5%;
+    }
+
+
+    /* sec4 ==> recommended section */
+    .recommended-section-parent {
+        width: 88%;
+        margin: auto;
+    }
+
+    .recommended-section-parent > h2 {
+        font-size: 30px;
+    }
+
+    .recommended-section-parent .recommended-item .one-item {
+        margin: auto;
+    }
+
+    .recommended-section-parent .recommended-item .left {
+        visibility: hidden;
+    }
+    .recommended-section-parent .recommended-item .right {
+        visibility: hidden;
+    }
+
+
+    /* sec5 ==> news section */
+    .news-section-parent > h2 {
+        font-size: 35px;
+    }
+    
+    .news-section-parent .news-div .one-news {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+
+    /* sec6 ==>  */
+
+    .delivery-section-parent {
+        width: 100%;
+    }
+
+    .delivery-section-parent > div > div {
+        position: relative;
+        height: 65px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .delivery-section-parent > div > div i {
+        position: absolute;
+        font-size: 50px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: gray;
+        transition: 0.2s;
+    }
+
+    .delivery-section-parent > div h3 {
+        font-size: 19px;
+        margin: 10px 0;
+    }
+
+
+    /* sec7 ==> subscribe section */
+
+    .subscribe-section-parent .subscribe {
+        width: 95%;
+        height: 150px;
+        padding: 20px 0;
+    }
+
+    .subscribe-section-parent .subscribe .subscribe-details h3 {
+        font-size: 20px;
+    }
+    .subscribe-section-parent .subscribe .subscribe-details p {
+        font-size: 16px;
+        margin-bottom: 18px;
+        color: rgb(206, 206, 206);
+    }
+
+    .subscribe-section-parent .subscribe .subscribe-email input {
+        width: 230px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .subscribe-section-parent .subscribe .subscribe-email button {
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .subscribe-section-parent .more-shope {
+        width: 95%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 50px;
+        display: block;
+    }
+
+    .subscribe-section-parent .more-shope .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .subscribe-section-parent .more-shope .shope-link {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .subscribe-section-parent .more-shope .shope-link .one-shope {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .subscribe-section-parent .more-shope .shope-link a{
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: rgb(185, 184, 184);
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.5s;
+    }
+    .subscribe-section-parent .more-shope a:hover {
+        transform: scaleX(1.1);
+        text-decoration: underline;
+    }
+
+    .subscribe-section-parent .more-shope h3 {
+        font-size: 21px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .subscribe-section-parent .copy-right {
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .subscribe-section-parent .copy-right p{
+        color: rgb(167, 167, 167);
+        font-size: 18px;
+    }
+
+    .subscribe-section-parent .copy-right p a {
+        color: red;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+    .subscribe-section-parent .copy-right p a:hover {
+        letter-spacing: 1px;
+    }
+
+    .subscribe-section-parent .copy-right p span i{
+        animation-name: change;
+        animation-iteration-count: infinite;
+        color: black;
+        animation-duration: 1s;
+    }
+
+    @keyframes change {
+        0% {
+
+        }
+        50% {
+            color: red;
+            transform: scale(1.3);
+        }
+        100% {
+
+        }
     }
 }
