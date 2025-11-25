@@ -105,7 +105,6 @@ body {
     margin: auto;
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
     justify-content: space-between;
     align-items: center;
 }
@@ -1106,12 +1105,24 @@ body {
     .header-sec2 .sec2-title {
         margin: auto;
     }
+
+    .header-sec2 .sec2-link {
+        width: 500px;
+        margin: auto;
+    }
+
+    .header-sec2 li > a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
     .header-sec2 .sec2-link-icon {
         margin: auto;
     }
     .header-sec2 .sec2-link .check-list .pages-details {
         width: 230px;
         height: 150px;
+        left: -130%;
     }
     .header-sec2 .sec2-link .pages-details p {
         font-size: 16px;
@@ -1123,8 +1134,13 @@ body {
 
 
     /* sec3 */
+    .header .header-sec3 {
+        width: 100%;
+        height: 35px;
+        justify-content: flex-start;
+    }
     .header-sec3 .sec3-details {
-        font-size: 12px;
+        font-size: 13px;
     }
     .header-sec3 .sec3-link {
         font-size: 13px;
