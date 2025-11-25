@@ -1193,13 +1193,14 @@ body {
     }
     
     .brand-bar {
-        margin-bottom: 0px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
     }
     
     .brand-bar h2 {
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 600;
-        width: 200px;
+        width: 180px;
         text-align: center;
     }
     
