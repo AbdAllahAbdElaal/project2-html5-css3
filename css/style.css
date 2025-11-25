@@ -596,9 +596,12 @@ body {
 
 .customer-section-parent {
     position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
     text-align: center;
     margin: 50px  0;
-    padding: 50px;
+    padding: 30px;
     width: 100%;
     background-color: rgb(238, 255, 249);
     border-top: 1px solid gray;
@@ -1229,7 +1232,7 @@ body {
 
     /* sec3 ==> customer section */
     .customer-section-parent {
-        padding: 50px 0;
+        padding: 30px 0;
     }
 
     .customer-section-parent .customer-title {
