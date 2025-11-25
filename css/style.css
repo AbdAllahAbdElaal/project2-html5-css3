@@ -1214,7 +1214,7 @@ body {
 
     /* sec3 ==> customer section */
     .customer-section-parent {
-        padding: 90px 0px;
+        padding-top: 50px;
     }
 
     .customer-section-parent .customer-title {
