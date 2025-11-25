@@ -598,9 +598,8 @@ body {
     position: relative;
     text-align: center;
     margin: 50px  0;
-    padding: 35px;
+    padding: 50px;
     width: 100%;
-    height: 70vh;
     background-color: rgb(238, 255, 249);
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
@@ -1230,7 +1229,7 @@ body {
 
     /* sec3 ==> customer section */
     .customer-section-parent {
-        padding-top: 50px;
+        padding: 50px 0;
     }
 
     .customer-section-parent .customer-title {
